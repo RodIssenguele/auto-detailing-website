@@ -1,0 +1,37 @@
+
+
+@media (min-width: 1024px) {
+  .body{
+    background-color: rgb(0, 0, 0);
+  }
+
+  .header-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-name-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-buchen{
+  display: none;
+  }
+  .buchen-desktop-button{
+  display:inline;
+}
+}
+
