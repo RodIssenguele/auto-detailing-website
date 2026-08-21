@@ -3,9 +3,26 @@
 }
 
 body{
-  background-color: rgb(119, 119, 119);
+  background-color: whitesmoke;
   margin:0px;
   font-family: "Inter", sans-serif;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+.nav-list,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --brand-blue: #1995ED;/*btn`s and logo*/       
+  --brand-blue-dark: #1F4E79;/*big text*/  
+  --background: #D6D4D4;/*header and background*/
+  --text-dark: #111111;
+  --white: #F7F7F7;
 }
 
 

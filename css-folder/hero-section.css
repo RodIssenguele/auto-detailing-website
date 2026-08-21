@@ -1,9 +1,22 @@
 .hero-section{
-  margin-top: 75px;
+  position: relative;
+  top:80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  height: auto;
+  max-width: 100%;
+}
+
+.intro-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: auto;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
 }
 
 .intro{
@@ -11,56 +24,73 @@
   flex-direction: column;
   justify-content: center;
   z-index: 900;
-  color: rgb(188, 143, 27);
-  margin: 0 0 50px 0;
-  padding:0;
+  color: #1F4E79;
+  margin: 0px;
+  padding: 0px ;
+  background-color: #D6D4D4;
+  border-radius: 10px;
+}
+
+.hero-intro-sentence{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 10px 0;
 }
 
 .hero-img-container{
-  margin-top: 0px;
-  position: fixed;
-  z-index: 800;
-  width: 390px;
-  height: 450px; 
-  padding: 0 10px;
-  border: solid 1px transparent;
+  margin: 10px 0 0 0;
+  width: 100%;
+  height: auto; 
+  padding: 0px;
+  border: solid 0px transparent;
   border-radius: 10px;
+  align-items: center;
 }
 
 .hero-img{ 
   max-width: 100%;
-  border: solid 1px transparent;
+  border: solid 0px transparent;
   border-radius: 10px;
   height: auto;
+  padding: 0;
+  margin: 0;
 }
 
-.intro-sentence{
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  font-style: oblique;
-  /*margin: -50px 0;*/
-  padding: 0;
-}
+/*---------------------------*/
 
 .hero-description-action{
   display: flex;
   z-index: 900;
   flex-direction: column;
   justify-content: center;
-  margin-top: 200px;
-  /*padding-top: 50px*/ 
-
+  margin: 0 10px;
+  padding: 0;
+  gap:10px
 }
 
-.hero-descriptio-sentence{
+.hero-description-sentence{
   text-align: center;
-  font-size: 23px;
-  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 10px;
+  background-color: #D6D4D4;
+  border: 0px;
+  border-radius: 10px;
+  color: #1F4E79
 }
 
 .hero-buchen-btn{
- height: 50px;
+ height: 60px;
  border-radius: 50px;
  border: solid 1px transparent;
+ background-color: #1995ED;
+ color: white;
+ font-size: 18px;
+ font-family: "Montserrat", sans-serif;
+ font-weight: 600;
 }

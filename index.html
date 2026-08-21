@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HighTech Pflege</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="css-folder/header.css">
   <link rel="stylesheet" href="css-folder/mobile-header.css">
   <link rel="stylesheet" href="css-folder/auto-detailing.css">
@@ -14,53 +21,56 @@
 
     <div class="header-name-container">
       <a href="#" class="name-link">
-        <img class="logo" src="images/logo-edited-gold.png">
+        <img alt="HighTech Pflege logo" class="logo" src="images/logo-reversed.png">
         
       </a>
 
-      <div>
-      <button class="nav-mobile-btn js-nav-mobile-btn">...</button>
+      <div class="hamburger-menu-container">
+      <button class="nav-mobile-btn js-nav-mobile-btn" aria-label="Menu öffnen" aria-expanded="false">
+        <span class="hamburger-icon">☰</span>
+      </button>
       </div>
 
     </div>
    
     <nav class="js-nav-container nav-container" >
-      <li class="nav-list">
-        <ul class="nav-buchen ul">
-          <button class="buchen-mobile-nav-button"> Jetz Buchen</button>
-        </ul>
-        <ul class="nav-home ul">Home</ul>
-        <ul class="nav-services ul">Services</ul>
+      <ul class="nav-list">
+        <li class="nav-buchen ul">
+          <button aria-label="Jetz Buchen" class="buchen-mobile-nav-button"> Jetzt Buchen</button>
+        </li>
+        <li class="nav-home ul"><a>Home</a></li>
+        <li class="nav-services ul"><a>Services</a></li>
         
-        <ul class="nav-media ul">Media</ul>
-        <ul class="nav-referenzen ul">Referenzen</ul>
-        <ul class="nav-uber-uns ul">Über uns</ul>
-        <ul class="nav-kontak ul">Kontakt</ul>
-      </li>
+        <li class="nav-media ul"><a>Media</a></li>
+        <li class="nav-referenzen ul"><a>Referenzen</a></li>
+        <li class="nav-uber-uns ul"><a>Über uns</a></li>
+        <li class="nav-kontak ul"><a>Kontakt</a></li>
+      </ul>
       <button class="buchen-desktop-button"> Termin Buchen</button> 
     </nav>
   </header>   
 
   <section class="hero-section">
 
-    <div class="intro">
-      <p class="intro-sentence">
-        Premium Wellness <br> Für Ihr Auto 
-      </p>
-    </div>
+    <div class="intro-container">
+      <div class="intro">
+        <h1 class="hero-intro-sentence">
+          Premium Wellness <br> Für Ihr Auto 
+        </h1>
+      </div>
 
-    <div class="hero-img-container">
-      <img class="hero-img" src="images/edited-wet-rolls.png">
+      <div class="hero-img-container">
+        <img alt="Premium-Handwäsche" class="hero-img" src="images/edited-wet-rolls.png">
+      </div>
     </div>
-
     
   
     <div class="hero-description-action">
-      <p class="hero-descriptio-sentence">Professionelle Fahrzeugpflege 
+      <h2 class="hero-description-sentence">Professionelle Fahrzeugpflege 
         <br>
         in St. Gallen
-      </p>
-      <button class="buchen hero-buchen-btn"> Termin Buchen</button>
+      </h2>
+      <button aria-label="Jetz Buchen" class="buchen hero-buchen-btn"> Jetzt Buchen</button>
     </div>
 
   </section>

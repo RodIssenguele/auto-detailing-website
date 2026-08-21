@@ -3,11 +3,8 @@
   display: flex;
   flex-direction: row;
   border: solid 1px transparent;
-  
-}
 
-.logo{
-  width: 55%;
+  
 }
 
 .header-name-container{
@@ -17,30 +14,59 @@
   margin:0px;
   padding: 10px;
   z-index: 1000;
-  height: 75px;
+  height: 80px;
   position: fixed;
   top: 0;
   right: 0;
   left:0;
-  background-color: rgb(214, 212, 212);
+  background-color:#D6D4D4;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border: 0px;
 }
 
 .name-link{
   text-decoration: none;
-}
-.name{
-  font-size: 30px;
-  color: black;
+  display: block;
+  align-items: center;
+  width: 300px;
+  height: 60px;
 }
 
+.logo{
+  max-width: 100%;
+  border-radius: 10px;
+  align-self: center;
+  max-height: 100%;
+}
+
+.hamburger-menu-container{
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding:0;
+}
+
+
 .nav-mobile-btn{
-  background-color:black/*rgb(63, 150, 163)*/;
-  border-radius: 5px;
-  width: 20px;
-  height: 50px;
-  border: solid 1px transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+  border: none;
+  margin: 0;
+  padding:0;
+}
+
+.nav-mobile-btn:hover{
+  cursor: pointer;
+}
+.hamburger-icon{
+  color: #111;
+  font-size: 25px;
 }
 
 .nav-container{
@@ -48,13 +74,12 @@
 }
 .nav-container-visible{
   display: block;
-  margin-top: 75px;
   z-index: 1001;
   position:fixed;
-  top: 0;
+  top: 80px;
   right: 0;
   left:0;
-  height:100vh;
+  bottom: 0;
   background-color: black;
 }
 
@@ -62,7 +87,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgb(214, 212, 212);
+  color: white;
   margin: 0;
   padding: 0;  
   
@@ -78,8 +103,8 @@
 
 .buchen-mobile-nav-button{
   width: 250px;
-  height: 75px;
-  background-color: rgb(214, 212, 212);
+  height: 80px;
+  background-color: #1995ED;
   border: solid 1px transparent;
   color: black;
   border-radius: 20px;
