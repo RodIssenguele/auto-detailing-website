@@ -4,13 +4,13 @@
   flex-direction: row;
   border: solid 1px transparent;
 
-  
 }
 
 .header-name-container{
   display: flex;
   flex-direction: row;
   justify-content:space-between;
+  align-items: center;
   margin:0px;
   padding: 10px;
   z-index: 1000;
@@ -19,7 +19,7 @@
   top: 0;
   right: 0;
   left:0;
-  background-color:#D6D4D4;
+  background-color: whitesmoke;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border: 0px;
@@ -29,8 +29,8 @@
   text-decoration: none;
   display: block;
   align-items: center;
-  width: 300px;
-  height: 60px;
+  width: 250px;
+  height: 50px;
 }
 
 .logo{
@@ -45,14 +45,17 @@
   border: none;
   margin: 0;
   padding:0;
+  width: fit-content;
+  height: fit-content;
 }
 
-
+/*manually made hamburger icon*/
+/*
 .nav-mobile-btn{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   background-color: transparent;
   width: 44px;
   height: 44px;
@@ -60,18 +63,77 @@
   margin: 0;
   padding:0;
 }
+*/
 
+/*css dynamic hamburger btn*/
+.nav-mobile-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+/*manuall version*/
+/*
 .nav-mobile-btn:hover{
   cursor: pointer;
 }
+*/
+
+.hamburger-line {
+  width: 28px;
+  height: 2px;
+  background-color: #111;
+  border-radius: 2px;
+  border:none;
+  transition: transform 0.5s ease,
+              opacity 0.1s
+}
+
+.nav-mobile-btn-open .hamburger-line:nth-child(1){
+  transform: translateY(8px) rotate(45deg); 
+}
+
+.nav-mobile-btn-open .hamburger-line:nth-child(2){
+  opacity: 0;
+}
+
+.nav-mobile-btn-open .hamburger-line:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg)
+}
+
+/*manually made hamburger icon*/
+/*
 .hamburger-icon{
   color: #111;
   font-size: 25px;
 }
-
+*/
 .nav-container{
   display: none; 
 }
+
+@keyframes navContainerAnimation {
+  from{bottom: 100%; top: 80px; left: 0; right: 0; }
+  to{bottom: 0%; top: 80px; left: 0%; right: 0;}
+}
+
+@keyframes navList {
+  from{transform:translateY(100%) }
+  to{transform: translateY(0%);}
+}
+
+@keyframes navUlLi{
+  from{opacity: 0;}
+  to{opacity:1}
+}
+
 .nav-container-visible{
   display: block;
   z-index: 1001;
@@ -80,16 +142,22 @@
   right: 0;
   left:0;
   bottom: 0;
-  background-color: black;
+  background-color: whitesmoke;
+  animation-name: navContainerAnimation;
+  animation-duration: 2s;
+  transition: transform 0.3s ease;
 }
 
 .nav-list{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
+  color: black;
   margin: 0;
   padding: 0;  
+  animation-name:  navList;
+  animation-duration: 2s;
+  transition: transform 0.3 ease;
   
 }
 
@@ -99,6 +167,10 @@
   padding: 0;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
+  animation-name: navUlLi;
+  animation-duration: 3s;
+  transition: transform 0.3s ease;
+  list-style: none;
 }
 
 .buchen-mobile-nav-button{
@@ -108,7 +180,11 @@
   border: solid 1px transparent;
   color: black;
   border-radius: 20px;
-  font-size: 20px
+  font-size: 20px;
+  animation-name: navAnimation;
+  animation-duration: 2s;
+  /*transition: transform 0.5s ease;*/
+  animation-name: ulNavAnimation;
 }
 
 .buchen-desktop-button{

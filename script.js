@@ -8,17 +8,17 @@ function navBtn(){
 
     navContainer.classList.toggle('nav-container-visible');
 
+    navMobileBtn.classList.toggle('nav-mobile-btn-open')
+
     const menuIsOpen = navContainer.classList.contains('nav-container-visible');
 
-    
-    navMobileBtn .setAttribute("aria-expanded", menuIsOpen);
+    navMobileBtn.setAttribute("aria-expanded", menuIsOpen);
   
     if(menuIsOpen){
-      menuIcon.innerHTML = 'X'  
-    } else{
-      menuIcon.innerHTML = '☰'
+       navMobileBtn.setAttribute("aria-label", "Menü schließen")
+    } else {
+      navMobileBtn.setAttribute("aria-label", "Menü öffnen")
     }
-    console.log(navMobileBtn.attributes)
   })
 }
 
